@@ -12,6 +12,7 @@
 int main(void)
 {
 	dlistint_t *head;
+	int i;
 
 	head = NULL;
 	add_dnodeint_end(&head, 0);
@@ -27,42 +28,17 @@ int main(void)
 	delete_dnodeint_at_index(&head, 5);
 	print_dlistint(head);
 	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	print_dlistint(head);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	print_dlistint(head);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	print_dlistint(head);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	print_dlistint(head);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	print_dlistint(head);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	print_dlistint(head);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	printf("-----------------\n");
-	delete_dnodeint_at_index(&head, 0);
-	printf("-----------------\n");
+	for (i = 1; i < 8; i++)
+	{
+		delete_dnodeint_at_index(&head, 0);
+		print_dlistint(head);
+		printf("-----------------\n");
+	}
+	for (i = 1; i < 10; i++)
+	{
+		delete_dnodeint_at_index(&head, 0);
+		printf("-----------------\n");
+	}
 	delete_dnodeint_at_index(&head, 0);
 	print_dlistint(head);
 	free_dlistint(head);

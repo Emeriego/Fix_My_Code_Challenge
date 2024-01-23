@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/Users/apple/.nvm/versions/node/v17.9.1/bin/node
 /*
     Print a square with the character #
     

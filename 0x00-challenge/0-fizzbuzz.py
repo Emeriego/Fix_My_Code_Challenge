@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def fizzbuzz(n):
     """
     FizzBuzz function prints numbers from 1 to n separated by a space.

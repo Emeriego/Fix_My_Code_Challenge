@@ -1,7 +1,6 @@
-#!/usr/bin/node
+#!/Users/apple/.nvm/versions/node/v17.9.1/bin/node
 /*
     Print a square with the character #
-    
     The size of the square must be the first argument 
     of the program.
 */
